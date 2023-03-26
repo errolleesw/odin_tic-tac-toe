@@ -122,8 +122,9 @@ puts "Welcome #{player_2.name}! Your symbol is #{player_2.symbol}."
 
 winner = nil
 
+print_board(board)
+
 until winner do
-  print_board(board)
   puts "#{player_1.name}, it is your turn. Enter the positin you would like to put your #{player_1.symbol}"
   position = gets.chomp
   player_turn(position.to_i,board,player_1.symbol)
